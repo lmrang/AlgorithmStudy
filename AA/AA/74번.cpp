@@ -1,4 +1,4 @@
-//73. 弥家赛(STL priority_queue)
+//74. 弥家赛(STL priority_queue)
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <stdio.h>
