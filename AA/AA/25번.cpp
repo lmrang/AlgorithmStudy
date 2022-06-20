@@ -1,4 +1,5 @@
-//25. 석차 구하기
+//25. 석차 구하기\
+//50등대가 한명도 보이지 않음 다시 수정해야함
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include<stdio.h>
@@ -40,6 +41,7 @@ void quick(int* grade, int start, int end)
 int main()
 {
 	int n;
+	freopen("input.txt", "rt", stdin);
 	scanf("%d", &n);
 	for (int i = 1; i <= n; i++)
 	{
@@ -49,19 +51,19 @@ int main()
 
 	quick(grade, 1, n);		//퀵 내림차순 정렬
 
-	for (int i = 1; i <= n; i++)
-	{
-		for (int j = 1; j <= n; j++)
-		{
-			if (grade[i-1] == grade[i]) continue;	//동점자 판단
-			if (grade[i] == num[j])
-			{
-				num[j] = i;
-			}
-		}
-	}
+	//for (int i = 1; i <= n; i++)
+	//{
+	//	for (int j = 1; j <= n; j++)
+	//	{
+	//		if (grade[i-1] == grade[i]) continue;	//동점자 판단
+	//		if (grade[i] == num[j])
+	//		{
+	//			num[j] = i;
+	//		}
+	//	}
+	//}
 
-	for (int i = 1; i <= n; i++) printf("%d ", num[i]);
+	for (int i = 1; i <= n; i++) printf("%d ", grade[i]);
 
 	return 0;
 }
