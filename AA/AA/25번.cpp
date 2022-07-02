@@ -1,5 +1,4 @@
 //25. 석차 구하기 (브루투포스)
-//50등대가 한명도 보이지 않음 다시 수정해야함
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include<stdio.h>
